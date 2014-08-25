@@ -1,14 +1,21 @@
 {
-  "name": "cli",
-  "version": "0.0.0",
+  "name": "clitest",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
-  "main"            : "./bin",
-  "bin"             : { "clitest": "./bin/test" },
-  "directories"     : { "test": "./test", "bin": "./bin" },
+  "main": "./bin",
+  "bin": {
+    "clitest": "./bin/test"
+  },
+  "directories": {
+    "test": "./test",
+    "bin": "./bin"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "zhulin",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.3.0"
+  }
 }
